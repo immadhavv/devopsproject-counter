@@ -1,0 +1,16 @@
+<!-- click_counter_app/templates/click_counter.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+<body>
+    <h1>Click Counter</h1>
+    <p>You have clicked the button {{ counter }} times.</p>
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" value="Click me!">
+    </form>
+</body>
+</html>
+
